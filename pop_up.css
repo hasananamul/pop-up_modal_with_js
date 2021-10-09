@@ -1,0 +1,110 @@
+body, input, button, select, textarea {
+    font-family: "Roboto",sans-serif;
+    background-color: #f7f7f7;
+}
+h4,h3{
+    margin: 0;
+    padding: 0;
+    color: #0C556E;
+}
+
+.first_row {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+    margin: auto;
+}
+.col-md-4 {
+    width: 25%;
+    height: 400px;
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+    cursor: pointer;
+}
+.speaker_image img {
+    width: 100%;
+    height: auto;
+    transition: .4s;
+
+}
+.speaker_image {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: auto;
+    margin-right: 30px;
+}
+
+/*modal css*/
+
+.modal {
+    display: flex;
+    width: 50%;
+    box-shadow: 4px 4px 20px #A49E70;
+    margin: auto;
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    left: 0;
+    right: 0;
+    top: 10%;
+    z-index: 999999;
+    bottom: 10%;
+    position: fixed;
+    overflow: auto;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.details_speaker p {
+    text-align: left;
+    color: #999;
+    font-size: 16px;
+    line-height: 28px;
+}
+div#close_btn {
+    background: #f7f7f7;
+    width: 30px;
+    color: #999;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    margin-left: auto;
+    cursor: pointer;
+    transition: 0.4s;
+}
+div#close_btn:hover {
+    background-color: #f9f9f9;
+    opacity: 0.6;
+
+}
+.col-md-4:hover .speaker_image img{
+    opacity: 0.7;
+}
+.col-md-4 .speaker_sort_details p {
+    text-align: center;
+    margin: 5px;
+    line-height: 28px;
+}
+.speaker_sort_details p {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    color: #999;
+}
+.speaker_name h4 {
+    font-size: 18px;
+    margin: 20px 0px 0px 0px;
+}
+.speaker_img_title {
+    padding: 25px;
+}
+.modal_title {
+    text-align: left;
+}
